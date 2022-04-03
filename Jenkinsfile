@@ -4,11 +4,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh '''
-                    sudo yum install epel-release -y
-                    sudo yum install nginx -y
-                    sudo systemctl start nginx
-                '''
+                sh 'sudo yum install epel-release -y'
+                sh 'sudo yum install nginx -y'
+                sh 'sudo systemctl start nginx'
             }
         }
     }
