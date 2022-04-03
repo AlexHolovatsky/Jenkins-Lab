@@ -5,8 +5,9 @@ pipeline {
         stage('Hello') {
             steps {
                 sh '''
-                   sudo yum install python36
-                   virtualenv -p python3 test
+                   yum install epel-release
+                   yum install nginx
+                   systemctl start nginx
                    '''
             }
         }
