@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'fuck my ass!!'
+                echo 'fuck my ass!!!!!!!!asssasaas'
             }
         }
     }
