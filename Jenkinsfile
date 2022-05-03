@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Message1') {
             steps {
-                echo 'russian battle ship go guck yourself!'
+                echo 'Russian battle ship go guck yourself!'
             }
         }
         stage('Message2') {
             steps {
-                echo 'Hello'
+                echo 'Hello World!'
            }
         }
     }
